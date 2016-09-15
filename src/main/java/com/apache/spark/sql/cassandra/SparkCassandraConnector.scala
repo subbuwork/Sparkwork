@@ -21,7 +21,7 @@ object SparkCassandraConnector {
                               .setMaster("local")
                               .set("spark.cassandra.connection.host", CassandraHost)
     val sc = new SparkContext(conf)
-    val sql = new SQLContext(sc)
+   // val sql = new SQLContext(sc)
     CassandraConnector(conf).withSessionDo { session =>
       session.execute("INSERT INTO test.emp(emp_id,emp_city, emp_name, emp_phone,emp_sal) VALUES (5,'chennai','manager',123456789,260000)")
       session.execute("INSERT INTO test.emp(emp_id,emp_city, emp_name, emp_phone,emp_sal) VALUES (6,'chennai','Developer',1783456789,280000)")

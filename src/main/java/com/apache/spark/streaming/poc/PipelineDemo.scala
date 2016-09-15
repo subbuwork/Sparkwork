@@ -14,7 +14,7 @@ object PipelineDemo extends KUtils{
    * This is demo class of streaming pipeline which ingest data 
    * from JMeter(In real time we use WebServices instead of JMeter)==>Active-MQ==>Flume
    * ==>Kafka==>SparkStreaming(Application,not service)==>Hive table.
-   * For this entire process we have to configure and up and running below listed services.
+   * For this, entire process we have to configure and up and running below listed services.
    * 
    * JMeter //Source 
    * Active-MQ //Broker(User either Queue(one to one) or Topic(one to many))
