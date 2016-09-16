@@ -11,8 +11,8 @@ trait TUtils extends App{
                  .setMaster("local[*]")
   // Connect to the Spark cluster:
   lazy val sc = new SparkContext(conf)
-  sc.setLogLevel("WARN")
-  val ssc = new StreamingContext(sc,Seconds(10))
+  sc.setLogLevel("ERROR")
+  val ssc = new StreamingContext(sc,Seconds(30))
 }
 object TUtils{
   def apply():TUtils = new TUtils{}
