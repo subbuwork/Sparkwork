@@ -10,11 +10,10 @@ object SentimentAnalysis extends TUtils {
   
   //Setting twitter personal access and consumer key details
   
-  /*System.setProperty("twitter4j.oauth.consumerKey", "provide your credentials")
+  System.setProperty("twitter4j.oauth.consumerKey", "Add your details!!!!")
   System.setProperty("twitter4j.oauth.consumerSecret", "")
   System.setProperty("twitter4j.oauth.accessToken", "")
-  System.setProperty("twitter4j.oauth.accessTokenSecret", "")*/
-  
+  System.setProperty("twitter4j.oauth.accessTokenSecret", "")  
  
   
   // Use the streaming context and the TwitterUtils to create the

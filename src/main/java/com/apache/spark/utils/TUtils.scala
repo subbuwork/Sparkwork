@@ -12,7 +12,7 @@ trait TUtils extends App{
   // Connect to the Spark cluster:
   lazy val sc = new SparkContext(conf)
   sc.setLogLevel("ERROR")
-  val ssc = new StreamingContext(sc,Seconds(30))
+  val ssc = new StreamingContext(sc,Seconds(1))
 }
 object TUtils{
   def apply():TUtils = new TUtils{}
