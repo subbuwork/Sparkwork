@@ -10,7 +10,7 @@ object SparkExample {
   def main(args: Array[String]): Unit = {
     val conf = new SparkConf()
                .setAppName("SparkExample")
-        conf.setMaster("local")      
+    conf.setMaster("local")
                
     val sc   = new SparkContext(conf)
     
